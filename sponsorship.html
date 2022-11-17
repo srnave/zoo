@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsorship</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style>
+        .nave{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      float: right !important;
+      width: 100%;
+    }
+    
+    li {
+      float:right;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
+    .logout-btn{
+          display: block;
+          color: white;
+          text-align: center;
+          margin: 14px 16px;
+          text-decoration: none;
+          background: transparent;
+          border: none;
+        }
+
+    td{
+      width: 300px;
+      height:50px;
+      color:white;
+      font-weight: bold;padding:7px 20px ;
+    }
+
+    td:nth-child(1) {
+      width: 150px;
+    }
+    /* tr:nth-child(n) {
+  background: red;
+} */
+    tr:nth-child(even) {
+      background: rgb(31, 30, 30);
+    }
+
+    tr:nth-child(odd) {
+  background: grey;
+}
+    </style>
+<body id="img">
+    <ul class="nave">
+        <li><img src="public/images.png" style="height: 50px; width:80px"></li>
+        <li><a href="./sponsorhome.html">Home</a></li>
+        <li><a href="./sponsorgallery.html">Gallery</a></li>
+        <li><a href="./sponsoranimals.html">Animals</a></li>
+        <li><a href="./sponsorupdate.html">Update Profile</a></li>
+        <li><form action="http://localhost:3000/logout" method="get"><button class="logout-btn" style="color: white;" type="submit">Logout</button ></form></li>
+      </ul>
+      <br><br><br><br>
+      <center>
+      <h2>SPONSOR ANIMAL</h2>
+      <br><br>
+      <form action="http://localhost:3000/sponsorship"  class="was-validated" method="post">
+        <table>
+
+              <tr>
+                <td>
+                  Name
+                </td>
+                <td>
+                  <input class="form-control" type="text" required id="na" name="j1" >
+                </td>
+
+              </tr>
+
+              <tr>
+                <td>Animal Name</td>
+                <td>
+                  <input class="form-control" type="text" required id="em" name="j2">
+                </td>
+              </tr>
+
+              <tr>
+                <td>Email</td>
+                <td>
+                  <input class="form-control" type="email" required id="em" name="j3">
+                </td>
+              </tr>
+
+              <tr>
+                <td>Phone</td>
+                <td>
+                  <input class="form-control" type="tel" required id="te" name="j4">
+                </td>
+              </tr>
+
+              <tr>
+                <td>Income</td>
+                <td>
+                  <input class="form-control" type="number" required id="fi" name="j5">
+                </td>
+              </tr>
+              <tr >
+                <td>
+
+                </td>
+                <td>
+                  <input class="btn bg-dark" style="width:100px;color: white;" type="submit" id="su">
+                </td>
+              </tr>
+
+        </table>
+      </form>
+  </center>
+
+    <br>
+    <div class="container-fluid" style="background-color: black;color:white; margin-top:142px;">
+    
+      <footer class="container-fluid text-center bg-color primary" style="padding: 100;">
+          <div class="container font-size small">
+            <div class="row">
+              <div class="col p-4">
+                <h6>Zoo Management System</h6>
+                <p> We are here trying to make a project on Zoo Management System which is basically an application software where we can get inf
+                    information about wildlife and as well as can manage the zoological garden
+                </p>
+              </div>
+              <div class="col p-2">
+                <h6>Our Location</h6>
+                <!-- <ul>
+                  <li style=""> -->
+                   <p><bold>Zoo Management System</bold></p>
+                   13/25 The Zumaka Zoo<br>Tiruppur Tamilnadu<br>Mobile +91 77368 25656
+                  <!-- </li>
+                </ul> -->
+              </div>
+              
+              
+            </div>
+          </div>
+          
+          <p style="margin-bottom:0px;padding-bottom:20px">copyrights@zumaka.com</p>
+        </footer>
+  </div>
+  <script src="./three.min.js"></script>
+  <script src="./vanta.net.min.js"></script>
+  <script src="script.js"></script>
+  
+
+  
+</body>
+</html>

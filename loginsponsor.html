@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login Sponsor</title>
+    <style>
+      #hi{
+        display: none;
+      }
+      .container{
+        padding: 30px;
+        border-radius: 20px;
+      }
+    .nave{
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          position: fixed;
+          float: right !important;
+          width: 100%   ;
+        }
+        
+        li {
+          float:right;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: #111;
+        }
+
+        
+        
+</style>
+<body>
+    <ul class="nave">
+        <li><img src="public/images.png" style="height: 50px; width:80px"></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <li><a href="./animals.html">Animals</a></li>
+        <li><a href="./ticket.html">Book Tickets</a></li>
+        <li><a href="./vacancies.html">Vacancies</a></li>
+        <li><a href="./register.html">Register for User</a></li>
+        <li><a href="./registersponsor.html">Register for Sponsorship</a></li>
+        <li><a href="./loginuser.html">Login As User</a></li>
+        <li><a href="./loginsponsor.html">Login As Sponsor</a></li>
+      </ul>
+    <br>
+    <br><br>
+
+    
+    </style>
+</head>
+<body>
+                    <form  method="post" action="http://localhost:3000/loginsponsor">
+                      
+                        <div class="container" style="width: 50%;border:2px solid">
+                          <div class="row">
+                            <div class="col">
+                             <br> <h2 class="text-dark">LOGIN</h2><br>
+                             
+                              <label>EMAIL:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email ID" name="l1"><br>
+                            <label>Password:</label>
+                            <input type="password" class="form-control" id="pwd"  placeholder="password" name="l2"><br>
+                            <input type="submit"  class="btn btn-success" data-bs-dismiss="modal" value="LOGIN">
+                            
+                            <br><br>
+                            
+                            </div>
+                          </div>
+                        </div>
+                          <br>  
+                    </form>
+                    <!-- <form method="post" action="http://localhost:3000/sponsor">
+                      <input type="submit"  class="btn btn-success" data-bs-dismiss="modal" value="LOGIN AS SPONSOR">
+                    </form>
+                  </div> -->
+
+                  <div class="container-fluid" style="background-color: black;color:white;">
+    
+                    <footer class="container-fluid text-center bg-dark " style="color:white;padding: 100;">
+                        <div class="container font-size small">
+                          <div class="row">
+                            <div class="col p-4">
+                              <h6>Zoo Management System</h6>
+                              <p> We are here trying to make a project on Zoo Management System which is basically an application software where we can get inf
+                                  information about wildlife and as well as can manage the zoological garden
+                              </p>
+                            </div>
+                            <div class="col p-2">
+                              <h6>Our Location</h6>
+                                 <p><bold>Zoo Management System</bold></p>
+                                 13/25 The Zumaka Zoo<br>Tiruppur Tamilnadu<br>Mobile +91 77368 25656
+                            </div>
+                            
+                            
+                          </div>
+                        </div>
+                        
+                        <p>copyrights@zumaka.com</p>
+                      </footer>
+                  </div>
+</body>
+</html>
+                  
+              

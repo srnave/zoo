@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<style>
+    .nave{
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          position: fixed;
+          float: right !important;
+          width: 100%   ;
+        }
+        
+        li {
+          float:right;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: #111;
+        }
+        body {
+          background-image: url('https://wallpaperaccess.com/full/1862824.png');           
+          background-repeat: no-repeat;
+          background-attachment:scroll;
+          background-size: 100% 40%;
+        }
+        .logout-btn{
+          display: block;
+          color: white;
+          text-align: center;
+          margin: 14px 16px;
+          text-decoration: none;
+          background: transparent;
+          border: none;
+        }
+        
+
+        
+        
+</style>
+<body>
+    <ul class="nave">
+        <li><img src="./public/images.png" style="height: 50px; width:80px"></li>
+        <li><a href="./adminhome.html">Home</a></li>
+        <li><a href="./adminticket.html">View Booked Tickets</a></li>
+        <li><a href="./adminjob.html">View Job Application</a></li>
+        <li><a href="./adminsponsor.html">View Sponsor Application</a></li>
+        <li><a href="./adminadd.html">Add Animals</a></li>
+        <li><a href="./adminedit.html">Edit Animals</a></li>
+        <li><a href="./admindelete.html">Delete Animals</a></li>
+        <li><form action="http://localhost:3000/logout" method="get"><button class="logout-btn" style="color: white;" type="submit">Logout</button ></form></li>
+      </ul>
+    <br>
+    <br><br>
+    <br><br>
+    <center>
+      <h1 style="color:black;">Zoo Management System</h1>
+    <!-- <img src="https://wallpaperaccess.com/full/1862824.png" style="height: 500px; width: 90%;"> -->
+      </center>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+
+    <center>
+    <h1 style="color:black">Welcome to Zoo Managemet</h1></center>
+    <h5 style="color: black;"container">A zoo (short for zoological garden; also called an animal park or menagerie) is a facility in which animals are housed within enclosures, cared for, displayed to the public, and in some cases bred for conservation purposes.
+
+      The term zoological garden refers to zoology, the study of animals. The term is derived from the Greek ζώον, zoon, 'animal', and the suffix -λογία, -logia, 'study of'. The abbreviation zoo was first used of the London Zoological Gardens, which was opened for scientific study in 1828 and to the public in 1847.[1] In the United States alone, zoos are visited by over 181 million people annually</h5>
+      <br><br>
+      <center><h2 style="color:black;"><b>Sponsors</b></h2></center>
+      <br><br>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./public/sponsor1.jfif  " style="height:150px; width:300px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The Standard</h5>
+              <p class="card-text">Standard Insurance Company, also branded as The Standard, is an American insurance and financial company </p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./public/sponsor2.png" style="height:150px; width:300px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Five Star Distributing</h5>
+              <p class="card-text">Five Star Distributing made its first deliveries on June 27, 2005. After acquiring an existing beer wholesaler, the Team at Five Star immediately set out to become the premier beverage distributor in Northeast Indiana and beyond. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./public/sponsor3.png" style="height:150px; width:200px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">Bruce Stein founded Triple-S Steel Supply as a small, new and used steel distribution yard in 1960. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    <div class="container-fluid" style="background-color: black;color:white;">
+    
+    <footer class="container-fluid text-center bg-dark " style="color:white;padding: 100;">
+        <div class="container font-size small">
+          <div class="row">
+            <div class="col p-4">
+              <h6>Zoo Management System</h6>
+              <p> We are here trying to make a project on Zoo Management System which is basically an application software where we can get inf
+                  information about wildlife and as well as can manage the zoological garden
+              </p>
+            </div>
+            <div class="col p-2">
+              <h6>Our Location</h6>
+                 <p><bold>Zoo Management System</bold></p>
+                 13/25 The Zumaka Zoo<br>Tiruppur Tamilnadu<br>Mobile +91 77368 25656
+            </div>
+            
+            
+          </div>
+        </div>
+        
+        <p>copyrights@zumaka.com</p>
+      </footer>
+</div>
+</body>
+</html>

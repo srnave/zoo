@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Update Profile</title>
+    <style>
+      #hi{
+        display: none;
+      }
+      .container{
+        padding: 30px;
+        border-radius: 20px;
+      }
+      .nave{
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          position: fixed;
+          float: right !important;
+          width: 100%   ;
+        }
+        
+        li {
+          float:right;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: #111;
+        }
+        .logout-btn{
+          display: block;
+          color: white;
+          text-align: center;
+          margin: 14px 16px;
+          text-decoration: none;
+          background: transparent;
+          border: none;
+        }
+        
+
+    </style>
+</head>
+<body>
+  <ul class="nave">
+    <li><img src="public/images.png" style="height: 50px; width:80px"></li>
+    <li><a href="./index2.html">Home</a></li>
+    <li><a href="./gallery2.html">Gallery</a></li>
+    <li><a href="./animals2.html">Animals</a></li>
+    <li><a href="./ticket2.html">Book Tickets</a></li>
+    <li><a href="./updateuser2.html">Update Profile</a></li>
+    <li><form action="http://localhost:3000/logout" method="get"><button class="logout-btn" style="color: white;" type="submit">Logout</button ></form></li>
+  </ul>
+  <br><br><br>
+                    <form  method="post" action="http://localhost:3000/updateuser">
+                      
+                        <div class="container" style="width: 50%;border:2px solid">
+                          <div class="row">
+                            <div class="col">
+                            <center><br> <h2 class="text-dark">USER REGISTRATION</h2><br></center> 
+                             <label>NAME</label>
+                            <input type="text" class="form-control"  placeholder="Name" name="u1"><br>
+                            <label>MOBILE NUMBER:</label>
+                            <input type="number" class="form-control"  placeholder="mobile number" name="u2"><br>
+                              <label>EMAIL:</label>
+                            <input type="email" class="form-control" name="u3"><br>
+                            <label>PASSWORD:</label>
+                            <input type="password" class="form-control" name="u4"><br>
+                            <input type="submit"  class="btn btn-success" data-bs-dismiss="modal" value="UPDATE PROFILE">
+                            
+                            <br><br>
+                            
+                            </div>
+                          </div>
+                        </div>
+                          <br>  
+                    </form>
+                  </div>
+                  <div class="container-fluid" style="background-color: black;color:white;">
+    
+                    <footer class="container-fluid text-center bg-dark " style="color:white;padding: 100;">
+                        <div class="container font-size small">
+                          <div class="row">
+                            <div class="col p-4">
+                              <h6>Zoo Management System</h6>
+                              <p> We are here trying to make a project on Zoo Management System which is basically an application software where we can get inf
+                                  information about wildlife and as well as can manage the zoological garden
+                              </p>
+                            </div>
+                            <div class="col p-2">
+                              <h6>Our Location</h6>
+                                 <p><bold>Zoo Management System</bold></p>
+                                 13/25 The Zumaka Zoo<br>Tiruppur Tamilnadu<br>Mobile +91 77368 25656
+                            </div>
+                            
+                            
+                          </div>
+                        </div>
+                        
+                        <p>copyrights@zumaka.com</p>
+                      </footer>
+                </div>
+</body>
+</html>
+                  

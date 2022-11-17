@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        td{
+      width: 300px;
+      height:50px;
+      color:white;
+      font-weight: bold;padding:7px 20px ;
+    }
+
+    td:nth-child(1) {
+      width: 150px;
+    }
+    /* tr:nth-child(n) {
+  background: red;
+} */
+    tr:nth-child(even) {
+      background: rgb(31, 30, 30);
+    }
+
+    tr:nth-child(odd) {
+  background: grey;
+}
+body {
+          background-image: url('https://wallpaperaccess.com/full/1862824.png');           
+          background-repeat: no-repeat;
+          background-attachment:scroll;
+          background-size: 100% 210%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <br><br><br><br><br><br>
+    <h2 class="text-light">Admin Login Panel</h2>
+    <br><br>
+    <form action="http://localhost:3000/admin"  class="was-validated" method="post">
+        <table>
+
+            <tr>
+              <td>
+                Email
+              </td>
+              <td>
+                <input class="form-control" type="email" required id="na" name="a1" >
+              </td>
+
+            </tr>
+
+            <tr>
+              <td>Password</td>
+              <td>
+                <input class="form-control" type="password" required id="em" name="a2">
+              </td>
+            </tr>
+            <tr >
+                <td>
+
+                </td>
+                <td>
+                  <input class="btn bg-dark" style="width:100px;color: white;" type="submit" id="su">
+                </td>
+              </tr>
+
+        </table>
+
+</center> 
+    </form>
+    
+</body>
+</html>
